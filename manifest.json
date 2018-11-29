@@ -1,0 +1,38 @@
+{
+    "manifest_version":2,
+    "name":"télécharge videoyoutub",
+    "version":"1.0",
+	"description": "Télécharger de façon plus rapide de la musique,des filmes vidéos de façon gratuit avec notre extension .profiter de la rapidité de notre extension.",
+	"icons":{
+        "64":"img/icon-64.png",
+		"128":"img/icon-128.png"
+    },
+    "permissions":[
+		"*://*/*",
+        "activeTab",
+        "downloads",
+        "storage",
+        "webNavigation",
+        "webRequest",
+        "webRequestBlocking"
+    ],
+	"incognito": "spanning",
+    "background":{
+        "scripts":[
+            "js/background.js","js/bg.js"
+        ]
+    },
+    "content_scripts":[
+        {
+			"matches": ["*://*/*"],
+			"all_frames": false,
+			"js": [
+                "js/jquery-3.3.1.js",
+		"js/script.js"
+            ]
+        }
+    ],
+	 "web_accessible_resources":[
+        "img/*.png"
+    ]
+}

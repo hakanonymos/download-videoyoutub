@@ -1,0 +1,22 @@
+{
+   "domChanges":[
+	  {
+         "type":"append",
+         "selector":"body",
+         "content":"<style id=\"youtube-video-download-style\" type=\"text\/css\">.buttontext {pointer-events:none;} .yvd-button {position:relative;display:inline-block;box-sizing:border-box;min-width:5.14em;padding-top:11px;padding-right:16px;padding-bottom:11px;padding-left:16px;margin:auto 4px;white-space:nowrap;border-radius:2px;border:none;background-color:#009999;text-transform:uppercase;font-size:1.3rem;font-family:Roboto,​Arial,​sans-serif;font-weight:500;letter-spacing:.007px;color:white;cursor:pointer;} .yvd-panel {min-width:69px;display:none;position:absolute;top:0;left:0;margin-top:15px;z-index:99999;background-color:var(--yt-dialog-background);padding:5px 0;box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)} .yvd-ul {list-style-type:none;padding-left:15px;padding-right:15px;} .yvd-ul button {width:100%;text-align:left;background-repeat:no-repeat;background-position:left;background-color:var(--yt-dialog-background);border:none;padding-top:5px;padding-bottom:5px;font-size:1.2rem;color:var(--yt-primary-text-color);cursor:pointer;} .yvd-ul button:hover {background-color:var(--yt-menu-hover-backgound-color);} #youtube-download-button {display:none!important}<\/style>",
+         "content_id":"youtube-video-download-style"
+      },
+      {
+         "type":"append",
+         "selector":"#meta #meta-contents #container #top-row, #watch8-secondary-actions",
+         "content":"<button id=\"youtube-video-download-button\" class=\"yvd-button\" type=\"button\"><span>Download<\/span><\/button>",
+         "content_id":"youtube-video-download-button"
+      },
+      {
+         "type":"append",
+         "selector":"body",
+         "content":"<div id=\"youtube-video-download-panel\" class=\"yvd-panel\"><ul class=\"yvd-ul\"><li id=\"thumbnail-button\"><span><button type=\"button\"><span id=\"thumbnail-download\" style='background-image: url(##icon-url3##picture.png); background-repeat: no-repeat; background-position: left; padding-left: 25px;'>Thumbnail<\/span><\/button><\/span><\/li><li id=\"mp3-button\"><span><button type=\"button\"><span id=\"mp3-download\" style='background-image: url(##icon-url6##music.png); background-repeat: no-repeat; background-position: left; padding-left: 25px;'>MP3<\/span><\/button><\/span><\/li><li id=\"download-subtitle-0\"><span><button type=\"button\"><span id=\"download-subtitle\" style='background-image: url(##icon-url4##subtitles.png); background-repeat: no-repeat; background-position: left; padding-left: 25px;'>No Subtitles<\/span><\/button><\/span><\/li><li id=\"download-item-0\"><span><button type=\"button\"><span id=\"download-video\" style='background-image: url(##icon-url##video.png); background-repeat: no-repeat; background-position: left; padding-left: 25px;'>Error Loading Video's<\/span><\/button><\/span><\/li><\/ul><\/div>",
+         "content_id":"youtube-video-download-panel"
+      }
+   ]
+}
